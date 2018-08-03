@@ -5,7 +5,7 @@ ENV PATH /opt/conda/bin:$PATH
 
 # System Dependencies.
 RUN apt-get update --fix-missing && apt-get install -y \
-        wget bzip2 ca-certificates curl git\
+        wget bzip2 ca-certificates curl git gnupg\
         imagemagick \
         libicu-dev \
         # Required for SyntaxHighlighting
