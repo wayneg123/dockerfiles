@@ -68,7 +68,8 @@ RUN { \
         echo 'opcache.enable_cli=1'; \
     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-ENTRYPOINT [ "/usr/bin/tini", "--" ]
-CMD [ "/bin/bash" ]
+# ENTRYPOINT [ "/usr/bin/tini", "--" ]
+# CMD [ "/bin/bash" ]
+CMD ["php-fpm"]
 
 
